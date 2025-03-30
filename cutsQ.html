@@ -9,39 +9,49 @@
       font-family: sans-serif;
       display: flex;
       min-height: 100vh;
-      background-color: #003153; /* 背景色与主页一致 */
-      color: #e3c79f;  /* 文字颜色与主页一致 */
+      background-color: #003153; /* 普鲁士蓝 */
+      color: #b5120f; /* 圣罗兰红 */
     }
 
     nav {
       width: 200px;
-      background-color: #b5120f; /* 导航栏背景一致 */
-      padding: 2rem 1rem;
+      background-color: #b5120f; /* 圣罗兰红 */
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+      
+      /* ✅ 关键：flex 垂直居中 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1rem;
     }
 
     nav a {
       display: block;
       margin-bottom: 1.2em;
-      color: #89c4f4;
+      color: #e3c79f; /* 浅棕 */
       text-decoration: none;
       font-weight: bold;
     }
 
     nav a:hover {
-      color: #ffffff;
+      color: #FFFFFF; /* 珍珠白 */
       text-decoration: underline;
     }
 
     main {
       padding: 2rem;
       flex: 1;
+
+    
     }
 
-    h1 {
-      font-size: 2.5em;
-      margin-top: 0;
-    }
+   h1 {
+  font-size: 15vh;
+  margin: 0;
+  color: #b5120f; /* 明确设置为圣罗兰红 */
+}
+
+
   </style>
 </head>
 <body>
