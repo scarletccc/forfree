@@ -4,9 +4,44 @@
   <meta charset="UTF-8" />
   <title>Scarlet</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; background: #f7f7f7; }
-    nav a { margin-right: 1em; color: #3366cc; text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      min-height: 100vh;
+      background-color: #121212; /* 深色背景 */
+      color: #f0f0f0;             /* 浅色文字 */
+    }
+
+    nav {
+      width: 200px;
+      background-color: #1e1e1e; /* 导航背景 */
+      padding: 2rem 1rem;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a {
+      display: block;
+      margin-bottom: 1.2em;
+      color: #89c4f4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -16,6 +51,9 @@
     <a href="cutsA.html">类型A切片</a>
   </nav>
 
-  <h1>Scarlet</h1>
+  <main>
+    <h1>Scarlet</h1>
+
+  </main>
 </body>
 </html>
