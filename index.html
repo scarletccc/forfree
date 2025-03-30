@@ -9,38 +9,49 @@
       font-family: sans-serif;
       display: flex;
       min-height: 100vh;
-      background-color: #003153; /* 深色背景 */
+      background-color: #003153; /* 普鲁士蓝 */
       color: #b5120f; 
     }
 
     nav {
       width: 200px;
-      background-color: #e3c79f; /* 导航背景 */
-      padding: 2rem 1rem;
+      background-color: #b5120f; /* 圣罗兰红 */
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+      
+      /* ✅ 关键：flex 垂直居中 */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1rem;
     }
 
     nav a {
       display: block;
       margin-bottom: 1.2em;
-      color: #89c4f4;
+      color: #e3c79f; /* 浅棕 */
       text-decoration: none;
       font-weight: bold;
     }
 
     nav a:hover {
-      color: #003153;
-      text-decoration: 
+      color: #FFFFFF; /* 珍珠白 */
+      text-decoration: underline;
     }
 
     main {
       padding: 2rem;
       flex: 1;
+
+      /* ✅ 让主区域整体也能居中标题 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-top: 0;
+      /* ✅ 标题占页面高度 1/4 */
+      font-size: 10vh; /* 视口高度的 10% */
+      margin: 0;
     }
   </style>
 </head>
@@ -53,7 +64,6 @@
 
   <main>
     <h1>Scarlet</h1>
-
   </main>
 </body>
 </html>
